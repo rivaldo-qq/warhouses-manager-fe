@@ -27,10 +27,6 @@ export const APP_CONFIG = {
     // Base URL untuk API calls dengan fallback
     BASE_URL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080',
     // Endpoint untuk login
-    // Skip Ngrok Verif
-    headers: {
-      'ngrok-skip-browser-warning': 'true' // Nilainya bisa apa saja, 'true' sudah cukup
-    },
     LOGIN_ENDPOINT: '/api/v1/auth/login',
     // Timeout untuk request (dalam milliseconds) - diperpanjang untuk development
     TIMEOUT: 15000,
